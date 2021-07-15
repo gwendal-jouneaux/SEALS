@@ -1,0 +1,16 @@
+.project
+.settings/*
+addTools/.project
+addTools/.settings/*
+ImageDegradation/target/*
+ImageDegradation/.settings/*
+ImageDegradation/.classpath
+ImageDegradation/.project
+HTMLLoopPerforation/target/*
+HTMLLoopPerforation/.settings/*
+HTMLLoopPerforation/.classpath
+HTMLLoopPerforation/.project
+ConditionalLoading/target/*
+ConditionalLoading/.settings/*
+ConditionalLoading/.classpath
+ConditionalLoading/.project
