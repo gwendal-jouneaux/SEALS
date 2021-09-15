@@ -12,6 +12,5 @@
 	<modules>
 		<module>lang</module>
 		<module>execute</module>
-		<module>benchmark</module>
 	</modules>
 </project>

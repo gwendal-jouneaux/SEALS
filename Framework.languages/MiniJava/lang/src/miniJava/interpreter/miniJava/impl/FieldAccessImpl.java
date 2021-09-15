@@ -146,14 +146,4 @@ public class FieldAccessImpl extends ExpressionImpl implements FieldAccess {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		ObjectRefValue tmp0 = ((ObjectRefValue) (((Expression) (this.getReceiver())).evaluateExpression((State) (state))));
-		ObjectInstance realReceiver = ((ObjectInstance) (tmp0.getInstance()));
-		Field fld = ((Field) (this.getField()));
-		FieldBinding fb = ((FieldBinding) (CollectionService.head(CollectionService.select(realReceiver.getFieldbindings(), (x) -> EqualService.equals((x.getField()), (fld))))));
-		result = (Value) (fb.getValue()) ;
-		return result;
-	}
 }

@@ -151,26 +151,4 @@ public class InferiorOrEqualImpl extends ExpressionImpl implements InferiorOrEqu
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		Value left = ((Value) (((Expression) (this.getLeft())).evaluateExpression((State) (state))));
-		Value right = ((Value) (((Expression) (this.getRight())).evaluateExpression((State) (state))));
-		if (left instanceof IntegerValue) {
-			if (right instanceof IntegerValue) {
-				IntegerValue bleft = ((IntegerValue) (left));
-				IntegerValue bright = ((IntegerValue) (right));
-				BooleanValue tmp = ((BooleanValue) (MiniJavaFactory.eINSTANCE.createBooleanValue()));
-				tmp.setValue((bleft.getValue()) <= (bright.getValue()));
-				result = (Value) (tmp) ;
-			}
-			else {
-				result = (Value) (null) ;
-			}
-		}
-		else {
-			result = (Value) (null) ;
-		}
-		return result;
-	}
 }

@@ -75,12 +75,4 @@ public class IntConstantImpl extends ExpressionImpl implements IntConstant {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		IntegerValue ret = ((IntegerValue) (MiniJavaFactory.eINSTANCE.createIntegerValue()));
-		ret.setValue(this.value);
-		result = (Value) (ret) ;
-		return result;
-	}
 }

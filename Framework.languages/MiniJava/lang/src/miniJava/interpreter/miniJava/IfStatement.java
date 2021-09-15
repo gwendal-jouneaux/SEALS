@@ -14,6 +14,4 @@ public interface IfStatement extends EObject, Statement {
 	Block getElseBlock();
 
 	void setElseBlock(Block value);
-
-	void evaluateStatement(State state);
 }

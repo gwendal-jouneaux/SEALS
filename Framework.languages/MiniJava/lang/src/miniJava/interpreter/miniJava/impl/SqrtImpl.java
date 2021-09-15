@@ -106,19 +106,4 @@ public class SqrtImpl extends ExpressionImpl implements Sqrt {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		Value expression = ((Value) (((Expression) (this.getExpression())).evaluateExpression((State) (state))));
-		if (expression instanceof IntegerValue) {
-			IntegerValue number = ((IntegerValue) (expression));
-			IntegerValue tmp = ((IntegerValue) (MiniJavaFactory.eINSTANCE.createIntegerValue()));
-			tmp.setValue(MathService.sqrt((Sqrt) (this), (int) (number.getValue())));
-			result = (Value) (tmp) ;
-		}
-		else {
-			result = (Value) (null) ;
-		}
-		return result;
-	}
 }

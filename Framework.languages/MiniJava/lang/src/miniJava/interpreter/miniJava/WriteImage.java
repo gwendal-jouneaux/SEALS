@@ -10,6 +10,4 @@ public interface WriteImage extends EObject, Statement {
 	Expression getImage();
 
 	void setImage(Expression value);
-
-	void evaluateStatement(State state);
 }

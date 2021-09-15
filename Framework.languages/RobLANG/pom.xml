@@ -22,6 +22,5 @@
 		<module>standalone</module>
 		<module>execute</module>
 		<module>webots</module>
-		<module>benchmark</module>
 	</modules>
 </project>

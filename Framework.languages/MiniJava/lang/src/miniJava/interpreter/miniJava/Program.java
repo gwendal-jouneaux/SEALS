@@ -18,11 +18,7 @@ public interface Program extends EObject, Node {
 
 	void setState(State value);
 
-	void main();
-
 	void initialize(EList args);
-
-	State execute();
 
 	Method findMain();
 }

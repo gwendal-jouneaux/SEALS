@@ -151,14 +151,4 @@ public class ArrayAccessImpl extends ExpressionImpl implements ArrayAccess {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		ArrayRefValue arrayVal = ((ArrayRefValue) (((ArrayRefValue) (((Expression) (this.getObject())).evaluateExpression((State) (state))))));
-		IntegerValue indexVal = ((IntegerValue) (((IntegerValue) (((Expression) (this.getIndex())).evaluateExpression((State) (state))))));
-		int v = ((int) (indexVal.getValue()));
-		Value vtmp = ((Value) (CollectionService.get(arrayVal.getInstance().getValue(), v)));
-		result = (Value) (((Value) (vtmp)).copyj()) ;
-		return result;
-	}
 }

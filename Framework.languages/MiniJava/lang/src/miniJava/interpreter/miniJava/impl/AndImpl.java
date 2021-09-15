@@ -150,26 +150,4 @@ public class AndImpl extends ExpressionImpl implements And {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		Value left = ((Value) (((Expression) (this.getLeft())).evaluateExpression((State) (state))));
-		Value right = ((Value) (((Expression) (this.getRight())).evaluateExpression((State) (state))));
-		if (left instanceof BooleanValue) {
-			if (right instanceof BooleanValue) {
-				BooleanValue bleft = ((BooleanValue) (left));
-				BooleanValue bright = ((BooleanValue) (right));
-				BooleanValue tmp = ((BooleanValue) (MiniJavaFactory.eINSTANCE.createBooleanValue()));
-				tmp.setValue(((bleft.isValue()) && (bright.isValue())));
-				result = (Value) (tmp) ;
-			}
-			else {
-				result = (Value) (null) ;
-			}
-		}
-		else {
-			result = (Value) (null) ;
-		}
-		return result;
-	}
 }

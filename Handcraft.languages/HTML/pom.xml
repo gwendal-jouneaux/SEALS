@@ -16,7 +16,6 @@
 		<module>Truffle-Adaptable-Language</module>
 		<module>HTML-AdaptivePrettyPrinter</module>
 		<module>HTML-Adaptation-Modules</module>
-		<module>benchmark</module>
 	</modules>
 
 </project>

@@ -17,10 +17,4 @@ public class NullImpl extends ExpressionImpl implements Null {
 	protected EClass eStaticClass() {
 		return MiniJavaPackage.Literals.NULL;
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		result = (Value) (MiniJavaFactory.eINSTANCE.createNullValue()) ;
-		return result;
-	}
 }

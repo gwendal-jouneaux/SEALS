@@ -25,7 +25,6 @@
 		<module>fr.gwendal_jouneaux.rob_lang.webots</module>
 		<module>WebotProject</module>
 		<module>standalone</module>
-		<module>benchmark</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>

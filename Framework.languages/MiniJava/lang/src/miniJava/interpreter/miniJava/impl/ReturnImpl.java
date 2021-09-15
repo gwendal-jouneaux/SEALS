@@ -103,9 +103,4 @@ public class ReturnImpl extends StatementImpl implements Return {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public void evaluateStatement(State state) {
-		Value value = ((Value) (((Expression) (this.getExpression())).evaluateExpression((State) (state))));
-		((State) (state)).findCurrentFrame().setReturnValue(value);
-	}
 }

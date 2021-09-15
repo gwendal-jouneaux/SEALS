@@ -16,7 +16,4 @@ public class StatementImpl extends MinimalEObjectImpl.Container implements State
 	protected EClass eStaticClass() {
 		return MiniJavaPackage.Literals.STATEMENT;
 	}
-
-	public void evaluateStatement(State state) {
-	}
 }

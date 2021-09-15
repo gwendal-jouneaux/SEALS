@@ -177,11 +177,6 @@ public class ProgramImpl extends MinimalEObjectImpl.Container implements Program
 		return super.eIsSet(featureID);
 	}
 
-	public void main() {
-		((Program) (this)).initialize(null);
-		((Program) (this)).execute();
-	}
-
 	public void initialize(EList args) {
 		Context rootCont = ((Context) (MiniJavaFactory.eINSTANCE.createContext()));
 		State state = ((State) (MiniJavaFactory.eINSTANCE.createState()));
@@ -189,14 +184,6 @@ public class ProgramImpl extends MinimalEObjectImpl.Container implements Program
 		state.setRootFrame(MiniJavaFactory.eINSTANCE.createFrame());
 		state.getRootFrame().setRootContext(rootCont);
 		this.setState(state);
-	}
-
-	public State execute() {
-		State result;
-		Method main = ((Method) (((Program) (this)).findMain()));
-		((Block) (main.getBody())).evaluateStatementKeepContext((State) (this.getState()));
-		result = (State) (this.getState()) ;
-		return result;
 	}
 
 	public Method findMain() {

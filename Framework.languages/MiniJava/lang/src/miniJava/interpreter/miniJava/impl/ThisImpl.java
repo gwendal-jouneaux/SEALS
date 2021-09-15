@@ -19,13 +19,4 @@ public class ThisImpl extends ExpressionImpl implements This {
 	protected EClass eStaticClass() {
 		return MiniJavaPackage.Literals.THIS;
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		ObjectInstance currentInstance = ((ObjectInstance) (((State) (state)).findCurrentFrame().getInstance()));
-		ObjectRefValue tmp = ((ObjectRefValue) (MiniJavaFactory.eINSTANCE.createObjectRefValue()));
-		tmp.setInstance(currentInstance);
-		result = (Value) (tmp) ;
-		return result;
-	}
 }

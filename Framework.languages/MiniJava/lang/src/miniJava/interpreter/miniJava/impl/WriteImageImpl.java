@@ -158,29 +158,4 @@ public class WriteImageImpl extends StatementImpl implements WriteImage {
 		return super.eIsSet(featureID);
 	}
 
-	public void evaluateStatement(State state) {
-		WriteImageImpl.writeImage((String) (((Value) (((Expression) (this.getPath())).evaluateExpression((State) (state)))).customToString()), (Value) (((Expression) (this.getImage())).evaluateExpression((State) (state))));
-	}
-	
-	public static void writeImage(String path, Object image) {
-		ArrayInstance imgInstance = ((ArrayRefValue) image).getInstance();
-		int h = imgInstance.getSize();
-		int w = ((ArrayRefValue) imgInstance.getValue().get(0)).getInstance().getSize();
-		
-		BufferedImage jImage = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
-		for (int y = 0; y < h; y++) {
-			ArrayInstance line = ((ArrayRefValue) imgInstance.getValue().get(y)).getInstance();
-			for (int x = 0; x < w; x++) {
-				IntegerValue idv = (IntegerValue) line.getValue().get(x);
-				int grey = idv.getValue();
-				jImage.setRGB(x, y, grey+grey*256+grey*256*256);
-			}
-		}
-		File output = new File(path);
-		try {
-			ImageIO.write(jImage, path.substring(path.lastIndexOf(".")+1), output);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 }

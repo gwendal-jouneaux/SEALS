@@ -21,9 +21,5 @@ public interface Method extends EObject, Member {
 
 	EMap<Clazz, Method> getCache();
 
-	void evaluateStatement(State state);
-
 	Method findOverride(Clazz c);
-
-	void call(State state);
 }

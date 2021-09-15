@@ -6,6 +6,4 @@ public interface Sqrt extends EObject, Expression {
 	Expression getExpression();
 
 	void setExpression(Expression value);
-
-	Value evaluateExpression(State state);
 }

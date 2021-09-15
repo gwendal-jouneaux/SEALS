@@ -84,20 +84,4 @@ public class BlockImpl extends StatementImpl implements Block {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public void evaluateStatementKeepContext(State state) {
-		((State) (state)).pushNewContext();
-		Frame currentFrame = ((Frame) (((State) (state)).findCurrentFrame()));
-		int lgt = ((int) (CollectionService.size(this.getStatements())));
-		int i = ((int) (0));
-		while ((((i) < (lgt)) && (EqualService.equals((currentFrame.getReturnValue()), (null))))) {
-			((Statement) (CollectionService.get(this.getStatements(), i))).evaluateStatement((State) (state));
-			i = (i) + (1);
-		}
-	}
-
-	public void evaluateStatement(State state) {
-		((Block) (this)).evaluateStatementKeepContext((State) (state));
-		((State) (state)).popCurrentContext();
-	}
 }

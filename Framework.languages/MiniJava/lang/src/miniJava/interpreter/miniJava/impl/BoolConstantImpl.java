@@ -76,12 +76,4 @@ public class BoolConstantImpl extends ExpressionImpl implements BoolConstant {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		BooleanValue ret = ((BooleanValue) (MiniJavaFactory.eINSTANCE.createBooleanValue()));
-		ret.setValue(EqualService.equals((this.value), ("true")));
-		result = (Value) (ret) ;
-		return result;
-	}
 }

@@ -149,13 +149,4 @@ public class WhileStatementImpl extends StatementImpl implements WhileStatement 
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public void evaluateStatement(State state) {
-		BooleanValue continueWhile = ((BooleanValue) (((BooleanValue) (((Expression) (this.getCondition())).evaluateExpression((State) (state))))));
-		while (continueWhile.isValue()) {
-			((Block) (this.getBlock())).evaluateStatement((State) (state));
-			BooleanValue continueWhile2 = ((BooleanValue) (((BooleanValue) (((Expression) (this.getCondition())).evaluateExpression((State) (state))))));
-			continueWhile = continueWhile2;
-		}
-	}
 }

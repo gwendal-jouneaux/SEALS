@@ -9,6 +9,4 @@ public interface NewObject extends EObject, Expression {
 	void setType(Clazz value);
 
 	EList<Expression> getArgs();
-
-	Value evaluateExpression(State state);
 }

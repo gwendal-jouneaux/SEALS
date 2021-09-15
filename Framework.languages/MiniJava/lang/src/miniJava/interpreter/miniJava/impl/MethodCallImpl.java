@@ -176,35 +176,4 @@ public class MethodCallImpl extends ExpressionImpl implements MethodCall {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		ObjectRefValue realReceiver0 = ((ObjectRefValue) (((ObjectRefValue) (((Expression) (this.getReceiver())).evaluateExpression((State) (state))))));
-		ObjectInstance realReceiver = ((ObjectInstance) (realReceiver0.getInstance()));
-		Method realMethod = ((Method) (((Method) (((Method) (this.getMethod())).findOverride((Clazz) (realReceiver.getType()))))));
-		Context newContext = ((Context) (MiniJavaFactory.eINSTANCE.createContext()));
-		int argsLength = ((int) (CollectionService.size(this.getArgs())));
-		int i = ((int) (0));
-		while ((i) < (argsLength)) {
-			Expression arg = ((Expression) (CollectionService.get(this.getArgs(), i)));
-			Parameter param = ((Parameter) (CollectionService.get(realMethod.getParams(), i)));
-			SymbolBinding binding = ((SymbolBinding) (MiniJavaFactory.eINSTANCE.createSymbolBinding()));
-			binding.setSymbol(param);
-			binding.setValue(((Expression) (arg)).evaluateExpression((State) (state)));
-			newContext.getBindings().add(binding);
-			i = (i) + (1);
-		}
-		MethodCall2 call = ((MethodCall2) (MiniJavaFactory.eINSTANCE.createMethodCall2()));
-		call.setMethodcall(this);
-		((State) (state)).pushNewFrame((ObjectInstance) (realReceiver), (MethodCall2) (call), (Context) (newContext));
-		((MethodCall) (this)).call((Method) (realMethod), (State) (state));
-		Value returnValue = ((Value) (((State) (state)).findCurrentFrame().getReturnValue()));
-		((State) (state)).popCurrentFrame();
-		result = (Value) (returnValue) ;
-		return result;
-	}
-
-	public void call(Method realMethod, State state) {
-		((Method) (realMethod)).call((State) (state));
-	}
 }

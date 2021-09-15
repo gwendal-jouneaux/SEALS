@@ -105,13 +105,4 @@ public class NegImpl extends ExpressionImpl implements Neg {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		IntegerValue left = ((IntegerValue) (((Expression) (this.getExpression())).evaluateExpression((State) (state))));
-		IntegerValue tmp = ((IntegerValue) (MiniJavaFactory.eINSTANCE.createIntegerValue()));
-		tmp.setValue(-(left.getValue()));
-		result = (Value) (tmp) ;
-		return result;
-	}
 }

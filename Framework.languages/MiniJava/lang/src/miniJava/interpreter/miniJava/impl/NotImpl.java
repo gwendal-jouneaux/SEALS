@@ -105,13 +105,4 @@ public class NotImpl extends ExpressionImpl implements Not {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		BooleanValue left = ((BooleanValue) (((Expression) (this.getExpression())).evaluateExpression((State) (state))));
-		BooleanValue tmp = ((BooleanValue) (MiniJavaFactory.eINSTANCE.createBooleanValue()));
-		tmp.setValue(!(left.isValue()));
-		result = (Value) (tmp) ;
-		return result;
-	}
 }

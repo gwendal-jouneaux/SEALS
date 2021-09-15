@@ -6,6 +6,4 @@ public interface SymbolRef extends EObject, Expression {
 	Symbol getSymbol();
 
 	void setSymbol(Symbol value);
-
-	Value evaluateExpression(State state);
 }

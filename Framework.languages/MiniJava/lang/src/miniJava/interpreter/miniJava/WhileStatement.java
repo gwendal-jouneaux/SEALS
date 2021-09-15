@@ -10,6 +10,4 @@ public interface WhileStatement extends EObject, Statement {
 	Block getBlock();
 
 	void setBlock(Block value);
-
-	void evaluateStatement(State state);
 }

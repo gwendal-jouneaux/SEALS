@@ -243,19 +243,6 @@ public class ForStatementImpl extends StatementImpl implements ForStatement {
 		return super.eIsSet(featureID);
 	}
 
-	public void evaluateStatement(State state) {
-		((State) (state)).pushNewContext();
-		((Assignment) (this.getDeclaration())).evaluateStatement((State) (state));
-		BooleanValue continueFor = ((BooleanValue) (((BooleanValue) (((Expression) (this.getCondition())).evaluateExpression((State) (state))))));
-		while (continueFor.isValue()) {
-			((Block) (this.getBlock())).evaluateStatement((State) (state));
-			((Assignment) (this.getProgression())).evaluateStatement((State) (state));
-			BooleanValue continueFor2 = ((BooleanValue) (((BooleanValue) (((Expression) (this.getCondition())).evaluateExpression((State) (state))))));
-			continueFor = continueFor2;
-		}
-		((State) (state)).popCurrentContext();
-	}
-
 	@Override
 	public ForInterface defaultInterface() {
 		return new ForInterface(this.declaration, this.condition, this.progression, this.block);

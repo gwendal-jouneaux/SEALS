@@ -75,12 +75,4 @@ public class StringConstantImpl extends ExpressionImpl implements StringConstant
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		StringValue ret = ((StringValue) (MiniJavaFactory.eINSTANCE.createStringValue()));
-		ret.setValue(this.value);
-		result = (Value) (ret) ;
-		return result;
-	}
 }

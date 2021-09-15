@@ -160,49 +160,4 @@ public class NewArrayImpl extends ExpressionImpl implements NewArray {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		ArrayInstance res = ((ArrayInstance) (MiniJavaFactory.eINSTANCE.createArrayInstance()));
-		IntegerValue sizeArray = ((IntegerValue) (((IntegerValue) (((Expression) (this.getSize())).evaluateExpression((State) (state))))));
-		res.setSize(sizeArray.getValue());
-		state.getArraysHeap().add(res);
-		Value defaultValue = ((Value) (null));
-		if (this.getType() instanceof IntegerTypeRef) {
-			IntegerValue idv = ((IntegerValue) (MiniJavaFactory.eINSTANCE.createIntegerValue()));
-			idv.setValue(0);
-			defaultValue = idv;
-		}
-		else {
-			if (this.getType() instanceof BooleanTypeRef) {
-				BooleanValue idv = ((BooleanValue) (MiniJavaFactory.eINSTANCE.createBooleanValue()));
-				idv.setValue(false);
-				defaultValue = idv;
-			}
-			else {
-				if (this.getType() instanceof StringTypeRef) {
-					NullValue idv = ((NullValue) (MiniJavaFactory.eINSTANCE.createNullValue()));
-					defaultValue = idv;
-				}
-				else {
-					if (((this.getType() instanceof ClassRef) || (this.getType() instanceof ArrayTypeRef))) {
-						NullValue idv = ((NullValue) (MiniJavaFactory.eINSTANCE.createNullValue()));
-						defaultValue = idv;
-					}
-				}
-			}
-		}
-		int i = ((int) (0));
-		int sz = ((int) (res.getSize()));
-		while ((i) < (sz)) {
-			Value dv = ((Value) (defaultValue));
-			Value v = ((Value) (((Value) (dv)).copyj()));
-			res.getValue().add(v);
-			i = (i) + (1);
-		}
-		ArrayRefValue ret = ((ArrayRefValue) (MiniJavaFactory.eINSTANCE.createArrayRefValue()));
-		ret.setInstance(res);
-		result = (Value) (ret) ;
-		return result;
-	}
 }

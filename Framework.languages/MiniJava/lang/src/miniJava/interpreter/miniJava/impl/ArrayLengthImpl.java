@@ -106,14 +106,4 @@ public class ArrayLengthImpl extends ExpressionImpl implements ArrayLength {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		ArrayRefValue arrayRef = ((ArrayRefValue) (((Expression) (this.getArray())).evaluateExpression((State) (state))));
-		int size = ((int) (arrayRef.getInstance().getSize()));
-		IntegerValue tmp = ((IntegerValue) (MiniJavaFactory.eINSTANCE.createIntegerValue()));
-		tmp.setValue(size);
-		result = (Value) (tmp) ;
-		return result;
-	}
 }

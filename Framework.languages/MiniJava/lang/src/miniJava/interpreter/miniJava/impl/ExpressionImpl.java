@@ -16,14 +16,4 @@ public class ExpressionImpl extends StatementImpl implements Expression {
 	protected EClass eStaticClass() {
 		return MiniJavaPackage.Literals.EXPRESSION;
 	}
-
-	public void evaluateStatement(State state) {
-		((Expression) (this)).evaluateExpression((State) (state));
-	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		result = (Value) (null) ;
-		return result;
-	}
 }

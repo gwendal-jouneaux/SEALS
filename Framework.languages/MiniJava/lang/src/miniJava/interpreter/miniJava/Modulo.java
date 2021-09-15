@@ -10,6 +10,4 @@ public interface Modulo extends EObject, Expression {
 	Expression getRight();
 
 	void setRight(Expression value);
-
-	Value evaluateExpression(State state);
 }

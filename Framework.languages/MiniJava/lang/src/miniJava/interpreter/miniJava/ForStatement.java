@@ -21,6 +21,4 @@ public interface ForStatement extends EObject, Statement, AdaptableNode<ForInter
 	Block getBlock();
 
 	void setBlock(Block value);
-
-	void evaluateStatement(State state);
 }

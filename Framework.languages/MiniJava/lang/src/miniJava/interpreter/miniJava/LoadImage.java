@@ -6,6 +6,4 @@ public interface LoadImage extends EObject, Expression {
 	Expression getPath();
 
 	void setPath(Expression value);
-
-	Value evaluateExpression(State state);
 }

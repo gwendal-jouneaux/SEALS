@@ -30,7 +30,7 @@ if [ $LANG == "RobLANG" ]; then
     else
         for i in {1..30}
         do
-            { time java -jar Handcraft.languages/RobLANG/standalone/target/RobLANG.standalone-0.0.1-SNAPSHOT-jar-with-dependencies.jar programs/program.rob &> /dev/null; } 2>> "results/${LANG}_${TYPE}_${TRY}.txt"
+            { time java -jar Handcraft.languages/RobLANG/standalone/target/Handcraft.RobLANG.standalone-0.0.1-SNAPSHOT-jar-with-dependencies.jar programs/program.rob &> /dev/null; } 2>> "results/${LANG}_${TYPE}_${TRY}.txt"
         done
     fi
 fi

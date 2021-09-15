@@ -87,10 +87,4 @@ public class SymbolRefImpl extends ExpressionImpl implements SymbolRef {
 		}
 		return super.eIsSet(featureID);
 	}
-
-	public Value evaluateExpression(State state) {
-		Value result;
-		result = (Value) (((Value) (((Context) (((State) (state)).findCurrentContext())).findBinding((Symbol) (this.getSymbol())).getValue())).copyj()) ;
-		return result;
-	}
 }

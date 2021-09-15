@@ -212,10 +212,6 @@ public class MethodImpl extends MemberImpl implements Method {
 		return super.eIsSet(featureID);
 	}
 
-	public void evaluateStatement(State state) {
-		((Block) (this.getBody())).evaluateStatement((State) (state));
-	}
-
 	public Method findOverride(Clazz c) {
 		Method result;
 		if (!(MapService.containsKey((EMap) (this.getCache()), (Clazz) (c)))) {
@@ -266,9 +262,5 @@ public class MethodImpl extends MemberImpl implements Method {
 			result = (Method) (MapService.getFromMap((EMap) (this.getCache()), (Clazz) (c))) ;
 		}
 		return result;
-	}
-
-	public void call(State state) {
-		((Block) (this.getBody())).evaluateStatement((State) (state));
 	}
 }

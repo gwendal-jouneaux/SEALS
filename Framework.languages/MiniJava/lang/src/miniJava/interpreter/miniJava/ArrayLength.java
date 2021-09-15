@@ -6,6 +6,4 @@ public interface ArrayLength extends EObject, Expression {
 	Expression getArray();
 
 	void setArray(Expression value);
-
-	Value evaluateExpression(State state);
 }
