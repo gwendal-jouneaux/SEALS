@@ -4,6 +4,11 @@ LANG=$1
 TYPE=$2
 TRY=$3
 
+if [ ! -d "results" ];
+then 
+	mkdir results
+fi
+
 if [ $LANG == "MiniJava" ]; then
     export ADAPTABLE_PERFORMANCE=99
     export ADAPTABLE_ACCURACY=1 
