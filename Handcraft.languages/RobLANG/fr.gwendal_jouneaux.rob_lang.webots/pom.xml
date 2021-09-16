@@ -27,7 +27,7 @@
 			<artifactId>webots.controller</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>/usr/local/webots/lib/controller/java/Controller.jar</systemPath>
+			<systemPath>${webots.controller.lib}</systemPath>
 		</dependency>
 	</dependencies>
 	

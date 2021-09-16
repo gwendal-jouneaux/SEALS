@@ -113,15 +113,15 @@ public class FeedbackLoop extends AbstractFeedbackLoop<ContextRobLANG>{
 	}
 	
 	protected final void execute() {
-		AbstractAdaptationModule batteryOptim = getModules().get(0);
+		/*AbstractAdaptationModule batteryOptim = getModules().get(0);
 		for(Variable v : variables.values()) {
 			System.err.println("---->" + v.ID);
 			v.setValue(0.25);
 		}
 		batteryOptim.activate(true);
 		
-		return;
-		/*
+		return;*/
+		
 		if(solution.exists()) {
 			System.out.println("Choco found a solution");
 			for (RealVar var : variables.keySet()) {
@@ -136,7 +136,7 @@ public class FeedbackLoop extends AbstractFeedbackLoop<ContextRobLANG>{
 			for (AbstractAdaptationModule module : modules) {
 				module.activate(false);
 			}			
-		}*/
+		}
 	}
 
 }
