@@ -33,7 +33,7 @@
               xsi:type="miniJava:LoadImage">
             <path
                 xsi:type="miniJava:StringConstant"
-                value="/home/gjouneau/img.png"/>
+                value="img.png"/>
           </value>
         </statements>
         <statements
@@ -65,7 +65,7 @@
             xsi:type="miniJava:WriteImage">
           <path
               xsi:type="miniJava:StringConstant"
-              value="/home/gjouneau/out.png"/>
+              value="out.png"/>
           <image
               xsi:type="miniJava:SymbolRef"
               symbol="//@classes.0/@members.0/@body/@statements.0/@assignee"/>
@@ -95,7 +95,7 @@
               xsi:type="miniJava:LoadImage">
             <path
                 xsi:type="miniJava:StringConstant"
-                value="/home/gjouneau/img.png"/>
+                value="img.png"/>
           </value>
         </statements>
         <statements

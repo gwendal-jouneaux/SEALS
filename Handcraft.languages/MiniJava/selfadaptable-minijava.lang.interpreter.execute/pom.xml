@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>selfadaptable-minijava</groupId>
-		<artifactId>selfadaptable-minijava</artifactId>
+        <groupId>fr.gjouneau.self.adaptation.framework</groupId>
+		<artifactId>Handcraft.MiniJava</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-	</parent>
+    </parent>
 
 	<groupId>fr.gjouneau</groupId>
 	<artifactId>selfadaptable-minijava.lang.interpreter.execute</artifactId>

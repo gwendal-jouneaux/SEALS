@@ -12,8 +12,8 @@ fr/gjouneau/self/adaptation/framework/HTML/HTMLAdaptationContext.class
 fr/gjouneau/self/adaptation/framework/HTML/nodes/HTMLNodePlainText.class
 fr/gjouneau/self/adaptation/framework/HTML/nodes/HTMLNodeEmptyTag.class
 fr/gjouneau/self/adaptation/framework/HTML/nodes/HTMLNodeAttribute.class
-fr/gjouneau/self/adaptation/framework/HTML/HTMLParser.class
 fr/gjouneau/self/adaptation/framework/HTML/HTMLFeedbackLoop.class
+fr/gjouneau/self/adaptation/framework/HTML/HTMLParser.class
 fr/gjouneau/self/adaptation/framework/HTML/nodes/operations/HTMLOperationPlainText.class
 fr/gjouneau/self/adaptation/framework/HTML/nodes/operations/HTMLOperationAttribute.class
 fr/gjouneau/self/adaptation/framework/HTML/nodes/HTMLNodeAttribute$attributeType.class

@@ -2,10 +2,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
-		<groupId>selfadaptable-minijava</groupId>
-		<artifactId>selfadaptable-minijava</artifactId>
+        <groupId>fr.gjouneau.self.adaptation.framework</groupId>
+		<artifactId>Handcraft.MiniJava</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-	</parent>
+    </parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>selfadaptable-minijava.lang.interpreter</groupId>
 	<artifactId>selfadaptable-minijava.lang.interpreter</artifactId>
@@ -69,7 +69,7 @@
 			<artifactId>aspectjrt</artifactId>
 			<version>1.9.5</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.eclipse.emf.ecoretools.ale.compiler</groupId>
 			<artifactId>alecompiler-maven-plugin</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
@@ -79,7 +79,7 @@
 					<artifactId>org.eclipse.core.runtime</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.tetrabox.selfadaptable-minijava.lang.services</groupId>
 			<artifactId>org.tetrabox.selfadaptable-minijava.lang.services</artifactId>
@@ -102,19 +102,24 @@
 			<version>2.15.0</version>
 		</dependency>
 		<dependency>
+			<groupId>org.eclipse.xtext</groupId>
+			<artifactId>org.eclipse.xtext</artifactId>
+			<version>2.22.0</version>
+		</dependency>
+		<dependency>
 			<groupId>org.eclipse.emf.ecoretools.ale.compiler.lib</groupId>
 			<artifactId>org.eclipse.emf.ecoretools.ale.compiler.lib</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.eclipse.emf.ecoretools.ale.core</groupId>
 			<artifactId>org.eclipse.emf.ecoretools.ale.core</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
+		</dependency> -->
+		<!-- <dependency>
 			<groupId>org.eclipse.emf.ecoretools.ale.compiler.truffle.lib</groupId>
 			<artifactId>org.eclipse.emf.ecoretools.ale.compiler.truffle.lib</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		</dependency>  -->
 	</dependencies>
 </project>

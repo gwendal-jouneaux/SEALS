@@ -4,11 +4,11 @@ fr/gjouneau/savm/framework/lang/adaptation/ModuleRegistry.class
 fr/gjouneau/savm/framework/module/adaptation/SelfAdaptationModule.class
 fr/gjouneau/savm/framework/decision/model/visitor/IGoalVisitor.class
 fr/gjouneau/savm/framework/decision/model/TagConstraint$TAG.class
-fr/gjouneau/savm/framework/decision/model/visitor/ModelFlatteningVisitor.class
 fr/gjouneau/savm/framework/lang/adaptation/FeedbackLoop.class
+fr/gjouneau/savm/framework/decision/model/visitor/ModelFlatteningVisitor.class
 fr/gjouneau/savm/framework/decision/model/visitor/ChocoTransformVisitor$1.class
-fr/gjouneau/savm/framework/decision/model/visitor/FlattenedImpact.class
 fr/gjouneau/savm/framework/lang/semantics/OperationalizationProcessor.class
+fr/gjouneau/savm/framework/decision/model/visitor/FlattenedImpact.class
 fr/gjouneau/savm/framework/decision/model/TagConstraint.class
 fr/gjouneau/savm/framework/decision/model/Variable.class
 fr/gjouneau/savm/framework/lang/semantics/Operationalize.class
@@ -26,6 +26,6 @@ fr/gjouneau/savm/framework/lang/semantics/Node.class
 fr/gjouneau/savm/framework/decision/model/visitor/VariableAssessmentVisitor.class
 fr/gjouneau/savm/framework/lang/semantics/AdaptiveOperation.class
 META-INF/services/javax.annotation.processing.Processor
-fr/gjouneau/savm/framework/decision/model/GoalModelingElement.class
 fr/gjouneau/savm/framework/lang/adaptation/AdaptationContext.class
+fr/gjouneau/savm/framework/decision/model/GoalModelingElement.class
 fr/gjouneau/savm/framework/decision/model/Goal.class

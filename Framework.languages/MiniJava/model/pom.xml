@@ -10,7 +10,7 @@
 	</parent>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
-		<plugins>
+		<!-- <plugins>
 			<plugin>
 				<groupId>org.eclipse.emf.ecoretools.ale.compiler</groupId>
 				<artifactId>alecompiler-maven-plugin</artifactId>
@@ -27,7 +27,7 @@
 					<genmodelFile>${project.basedir}/model/MiniJava.genmodel</genmodelFile>
 				</configuration>
 			</plugin>
-		</plugins>
+		</plugins> -->
 	</build>
 
 	<properties>
@@ -35,7 +35,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
-	<dependencies>
+	<!-- <dependencies>
 		<dependency>
 			<groupId>org.eclipse.emf.ecoretools.ale.compiler</groupId>
 			<artifactId>alecompiler-maven-plugin</artifactId>
@@ -77,5 +77,5 @@
 			<artifactId>org.eclipse.emf.ecoretools.ale.compiler.truffle.lib</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-	</dependencies>
+	</dependencies> -->
 </project>

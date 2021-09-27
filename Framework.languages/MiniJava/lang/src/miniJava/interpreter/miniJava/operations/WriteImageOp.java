@@ -24,7 +24,6 @@ import miniJava.interpreter.miniJava.MiniJavaPackage;
 import miniJava.interpreter.miniJava.State;
 import miniJava.interpreter.miniJava.Value;
 import miniJava.interpreter.miniJava.WriteImage;
-import minijava.ImageService;
 
 @Operationalize(node = WriteImage.class, visitor = "miniJava.interpreter.MiniJavaVisitor")
 public class WriteImageOp extends Operation<WriteImage>{

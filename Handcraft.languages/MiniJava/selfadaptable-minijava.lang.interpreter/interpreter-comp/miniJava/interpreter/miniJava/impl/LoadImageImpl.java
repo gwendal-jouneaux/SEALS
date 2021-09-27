@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
+import java.nio.file.Paths;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -122,7 +123,8 @@ public class LoadImageImpl extends ExpressionImpl implements LoadImage {
 	public static Value loadImage(State state, String path) {
 		BufferedImage img = null;
 		try {
-		    img = ImageIO.read(new File(path));
+			String absPath = Paths.get(path).toAbsolutePath().toString();
+		    img = ImageIO.read(new File(absPath));
 		} catch (IOException e) {
 			System.out.println("ERROR loading image");
 			return null;

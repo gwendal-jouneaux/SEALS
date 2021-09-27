@@ -22,7 +22,7 @@ public class App {
 		
 		StandaloneContext context = new StandaloneContext();
 		FeedbackLoop.INSTANCE().setContext(context);
-		FeedbackLoop.INSTANCE().registerModule(new BatteryOptimization());
+		//FeedbackLoop.INSTANCE().registerModule(new BatteryOptimization());
 
 		Robot theRobot = (Robot) resource.getContents().get(0);
 		Object out = InterpretRobLANG.INSTANCE().interpret(theRobot, context);

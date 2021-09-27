@@ -20,7 +20,6 @@ import miniJava.interpreter.miniJava.MiniJavaPackage;
 import miniJava.interpreter.miniJava.State;
 import miniJava.interpreter.miniJava.Value;
 import miniJava.interpreter.miniJava.WriteImage;
-import minijava.ImageService;
 
 public class WriteImageImpl extends StatementImpl implements WriteImage {
 	protected Expression path;

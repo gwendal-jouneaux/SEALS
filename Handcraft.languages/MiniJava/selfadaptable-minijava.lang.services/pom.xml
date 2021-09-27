@@ -6,10 +6,10 @@
 	<artifactId>org.tetrabox.selfadaptable-minijava.lang.services</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<parent>
-		<groupId>selfadaptable-minijava</groupId>
-		<artifactId>selfadaptable-minijava</artifactId>
+        <groupId>fr.gjouneau.self.adaptation.framework</groupId>
+		<artifactId>Handcraft.MiniJava</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-	</parent>
+    </parent>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>

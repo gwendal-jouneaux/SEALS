@@ -6,13 +6,13 @@
 	<artifactId>selfadaptable-minijava.model</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
     <parent>
-        <groupId>selfadaptable-minijava</groupId>
-        <artifactId>selfadaptable-minijava</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>fr.gjouneau.self.adaptation.framework</groupId>
+		<artifactId>Handcraft.MiniJava</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
     </parent>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
-		<plugins>
+		<!-- <plugins>
 			<plugin>
 				<groupId>org.eclipse.emf.ecoretools.ale.compiler</groupId>
 				<artifactId>alecompiler-maven-plugin</artifactId>
@@ -29,7 +29,7 @@
 					<genmodelFile>${project.basedir}/model/MiniJava.genmodel</genmodelFile>
 				</configuration>
 			</plugin>
-		</plugins>
+		</plugins> -->
 	</build>
 
 	<properties>
@@ -38,7 +38,7 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.eclipse.emf.ecoretools.ale.compiler</groupId>
 			<artifactId>alecompiler-maven-plugin</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
@@ -48,7 +48,7 @@
 					<artifactId>org.eclipse.core.runtime</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.eclipse.emf</groupId>
 			<artifactId>org.eclipse.emf.ecore</artifactId>
@@ -64,7 +64,7 @@
 			<artifactId>org.eclipse.emf.ecore.xmi</artifactId>
 			<version>2.15.0</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.eclipse.emf.ecoretools.ale.compiler.lib</groupId>
 			<artifactId>org.eclipse.emf.ecoretools.ale.compiler.lib</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
@@ -78,6 +78,6 @@
 			<groupId>org.eclipse.emf.ecoretools.ale.compiler.truffle.lib</groupId>
 			<artifactId>org.eclipse.emf.ecoretools.ale.compiler.truffle.lib</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 </project>

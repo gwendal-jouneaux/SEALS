@@ -12,7 +12,7 @@
     </parent>
 
 	<modules>
-		<module>model</module>
+		<!-- <module>model</module> -->
 		<module>services</module>
 		<module>lang</module>
 		<module>execute</module>
