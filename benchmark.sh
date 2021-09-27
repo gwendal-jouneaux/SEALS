@@ -26,7 +26,7 @@ if [ $LANG == "MiniJava" ]; then
 fi
 
 if [ $LANG == "RobLANG" ]; then
-    export CONF_PATH=/home/gjouneau/Documents/Recherche/SAVM-Framework/RobLANG/webots/Interpreter/controllers/conf.txt
+    export CONF_PATH="$(realpath ./Framework.languages/RobLANG/webots/Interpreter/controllers/conf.txt)"
     if [ $TYPE == "Framework" ]; then
         for i in {1..30}
         do
