@@ -24,6 +24,6 @@
 		<module>HTMLPrettyPrinter-Launcher</module>
 		<!-- <module>native</module> -->
 		<module>component</module>
-		<!--  <module>addComponent</module> -->
+		<module>addComponent</module>
 	</modules>
 </project>
