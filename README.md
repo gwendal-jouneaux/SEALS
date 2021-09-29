@@ -86,5 +86,14 @@ Then, the `./preprocess.sh` script will transform the raw data to something expl
 ## Analyzing the benchmark results
 
 To analyze the results we provide a Jupyter Notebook in the analysis folder.
-This notebook performs the analysis of the benchmark results for all the VMs with three TRY each.
+
+First you need to install the following python dependency :
+
+- pandas
+- numpy
+- seaborn
+- matplotlib
+- scipy
+
+After that, the notebook performs the analysis of the benchmark results for all the VMs with three TRY each.
 > For the notebook to work correctly it is mandatory to perform all the benchmark before !
