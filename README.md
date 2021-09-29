@@ -8,7 +8,7 @@ Additionally, we provide a Jupyter notebook to analyze the results of the benchm
 ## Prerequisites
 
 - Running on Linux
-- Download [GraalVM CE (Java 8)](https://github.com/graalvm/graalvm-ce-builds/releases/tag/vm-20.3.3)
+- Download [GraalVM CE (Java 8)](https://github.com/graalvm/graalvm-ce-builds/releases/tag/vm-20.3.2)
 - Install Maven
 - Install the [webots simulator](https://github.com/cyberbotics/webots/releases/tag/R2021b)
 - Install the `cloc v1.9` command (from [here](https://github.com/AlDanial/cloc/releases/tag/v1.90))
@@ -87,3 +87,4 @@ Then, the `./preprocess.sh` script will transform the raw data to something expl
 
 To analyze the results we provide a Jupyter Notebook in the analysis folder.
 This notebook performs the analysis of the benchmark results for all the VMs with three TRY each.
+> For the notebook to work correctly it is mandatory to perform all the benchmark before !
